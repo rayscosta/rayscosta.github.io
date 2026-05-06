@@ -4,10 +4,110 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contato</title>
+    <title>Contato · Raimundo Costa</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .contact-wrapper {
+            min-height: 80vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 60px 24px;
+        }
+        .contact-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 48px;
+            max-width: 520px;
+            width: 100%;
+            text-align: center;
+        }
+        .contact-card .greeting {
+            font-size: 0.9rem;
+            margin-bottom: 12px;
+        }
+        .contact-card h1 {
+            font-size: 2rem;
+            margin-bottom: 16px;
+        }
+        .contact-card p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            margin-bottom: 32px;
+        }
+        .contact-options {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            margin-bottom: 32px;
+        }
+        .contact-link {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            background: rgba(56, 189, 248, 0.06);
+            border: 1px solid rgba(56, 189, 248, 0.15);
+            border-radius: var(--radius-sm);
+            padding: 14px 20px;
+            text-decoration: none;
+            color: var(--text);
+            font-size: 0.92rem;
+            transition: all 0.2s ease;
+        }
+        .contact-link:hover {
+            background: rgba(56, 189, 248, 0.12);
+            border-color: rgba(56, 189, 248, 0.4);
+            color: var(--accent);
+            transform: translateY(-1px);
+        }
+        .contact-link .icon {
+            font-size: 1.2rem;
+            flex-shrink: 0;
+        }
+        .back-link {
+            color: var(--text-faint);
+            text-decoration: none;
+            font-size: 0.85rem;
+            transition: color 0.2s ease;
+        }
+        .back-link:hover {
+            color: var(--accent);
+        }
+    </style>
 </head>
 <body>
-    <h1>Entre em contato comigo</h1>
-    <a href="mailto:raimundo.costa@gmail.com">raimundo.costa@gmail.com</a>
+    <div class="contact-wrapper">
+        <div class="contact-card">
+            <p class="greeting">👋 Vamos conversar?</p>
+            <h1>Entre em <span class="accent">contato</span></h1>
+            <p>
+                Estou sempre aberto a trocar ideias sobre tecnologia, governança de TI,
+                cloud ou oportunidades de colaboração.
+            </p>
+            <div class="contact-options">
+                <a href="mailto:raimundo.costa@gmail.com" class="contact-link">
+                    <span class="icon">✉️</span>
+                    <span>raimundo.costa@gmail.com</span>
+                </a>
+                <a href="https://www.linkedin.com/in/raycosta/" target="_blank" rel="noopener" class="contact-link">
+                    <span class="icon">💼</span>
+                    <span>linkedin.com/in/raycosta</span>
+                </a>
+                <a href="https://github.com/rayscosta" target="_blank" rel="noopener" class="contact-link">
+                    <span class="icon">🐙</span>
+                    <span>github.com/rayscosta</span>
+                </a>
+            </div>
+            <a href="index.html" class="back-link">← Voltar para o portfólio</a>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>Desenvolvido por <strong>Rai Costa</strong> · Rio de Janeiro</p>
+    </footer>
 </body>
 </html>

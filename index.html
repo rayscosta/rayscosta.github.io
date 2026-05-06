@@ -1,74 +1,187 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <!-- 
-        A tag head serve para as configurações do meu documentoi html
-    -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Raimundo Costa</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@700&family=Raleway:wght@400;500&display=swap" rel="stylesheet">
+    <meta name="description" content="Raimundo Costa - Analista de Governança de TI e Desenvolvedor. Rio de Janeiro.">
+    <title>Raimundo Costa | Governance & Dev</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- 
-        A tag body é responsável pela área vísivel da minha página
-    -->
-    <div class="container">
-        <div class="profile">
-            <img src="foto_perfil.jpg" alt="Foto: Raimundo Costa" class="foto-principal">
-            <h1>Raimundo Costa</h1>
-            <h2>Software developer</h2>
-            <a href="contato.html">Contato</a>
-            <br><br>
-            <a href="https://www.linkedin.com/in/raycosta/" target="_blank" class="social-links">
-                <img src="logo-linkedin.png" alt="Linkedin" class="social-icons">
-            </a>
-            <a href="https://www.instagram.com" target="_blank" class="social-links">
-                <img src="logo-instagram.png" alt="Instagram" class="social-icons instagram">    
-            </a>
-            <a href="https://github.com/rayscosta/rayscosta" target="_blank" class="social-links">
-                <img src="logo-github.png" alt="Github" class="social-icons">
-            </a>
-            <br><br>
-        </div>
 
-        <p>Hi, I'm <strong>Raimundo Costa</strong>. I'm a beginner developer who is very passionate about <b>technology</b> and automation.  I live in Rio de Janeiro with my 2 children. I have 5 years of experience in information technology, working most of the time in IT Governance.</p>
-        
-        <h3>Main skills</h3>
-        <ul>
-            <li>Javascript</li>
-            <li>Pyton</li>
-            <li>Google App Script</li>
-        </ul>
-
-        <h3>Other stuff i like to play</h3>
-        <p>
-            I like learning about different things and subjects such as: tattoos, artistic drawing, music and musical instruments and finally manual works
-        </p>
-
-        <h3>Courses and Certifications</h3>
-        <ol>
-            <li>ISO 27000 - Gestão de segurança da informação</li>
-            <li>ITIL 4 Foundations</li>
-            <li>COBIT 2019 Foundation</li>
-            <li>Lean six sigma</li>
-        </ol>
-        
-        <h3>I have worked at</h3>
-        <ul class="jobs-list">
-            <li>
-                <h4>Stone Pagamentos</h3>
-                <h5>Governance Analyst</h5>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus dolore consequuntur voluptatum dignissimos, similique voluptatibus expedita recusandae ea perspiciatis explicabo. Eligendi quia molestias ipsum fugiat eos impedit non error in.
+    <header class="hero">
+        <div class="hero-inner">
+            <img src="foto_perfil.jpg" alt="Foto de Raimundo Costa" class="foto-principal">
+            <div class="hero-text">
+                <p class="greeting">Olá, eu sou</p>
+                <h1>Raimundo <span class="accent">Costa</span></h1>
+                <h2>Analista de Governança de TI <span class="separator">·</span> Desenvolvedor</h2>
+                <p class="bio">
+                    Profissional de TI com mais de 5 anos de experiência em Governança e automação.
+                    Atualmente na <strong>Stone Pagamentos</strong>, atuando na garantia de conformidade,
+                    gestão de riscos e implementação de frameworks como ITIL, COBIT e ISO 27001.
+                    Apaixonado por tecnologia, automação e aprendizado contínuo.
                 </p>
-            </li>
-        </ul>
-    </div>
-    <div class="footer">
-        Developed by Rai Costa
-    </div>
+                <div class="hero-actions">
+                    <a href="contato.html" class="btn btn-primary">Entre em contato</a>
+                    <a href="#experiencia" class="btn btn-outline">Ver experiência</a>
+                </div>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/raycosta/" target="_blank" rel="noopener" aria-label="LinkedIn">
+                        <img src="logo-linkedin.png" alt="LinkedIn" class="social-icon">
+                    </a>
+                    <a href="https://github.com/rayscosta" target="_blank" rel="noopener" aria-label="GitHub">
+                        <img src="logo-github.png" alt="GitHub" class="social-icon">
+                    </a>
+                    <a href="https://www.instagram.com" target="_blank" rel="noopener" aria-label="Instagram">
+                        <img src="logo-instagram.png" alt="Instagram" class="social-icon">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <section id="habilidades" class="section">
+            <h3 class="section-title"><span class="mono">01.</span> Habilidades</h3>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h4>Desenvolvimento</h4>
+                    <div class="skill-tags">
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">Python</span>
+                        <span class="tag">Google Apps Script</span>
+                        <span class="tag">HTML / CSS</span>
+                        <span class="tag">Shell Script</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h4>Cloud & Infra</h4>
+                    <div class="skill-tags">
+                        <span class="tag">AWS S3</span>
+                        <span class="tag">AWS Amplify</span>
+                        <span class="tag">EC2</span>
+                        <span class="tag">Apache2</span>
+                        <span class="tag">Linux / Ubuntu</span>
+                        <span class="tag">Git / GitHub</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h4>Governança & Frameworks</h4>
+                    <div class="skill-tags">
+                        <span class="tag">ITIL 4</span>
+                        <span class="tag">COBIT 2019</span>
+                        <span class="tag">ISO 27001</span>
+                        <span class="tag">Lean Six Sigma</span>
+                        <span class="tag">Gestão de Riscos</span>
+                        <span class="tag">Conformidade</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="experiencia" class="section">
+            <h3 class="section-title"><span class="mono">02.</span> Experiência</h3>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-header">
+                        <div>
+                            <h4 class="job-title">Analista de Governança de TI</h4>
+                            <p class="job-company">Stone Pagamentos</p>
+                        </div>
+                        <span class="job-period">2020 — Presente</span>
+                    </div>
+                    <p class="job-description">
+                        Responsável pela implementação e manutenção de políticas de governança de TI em uma das
+                        maiores fintechs do Brasil. Atuação na gestão de conformidade com frameworks ITIL 4 e
+                        COBIT 2019, análise e mitigação de riscos tecnológicos, e suporte a auditorias internas
+                        e externas. Desenvolvimento de automações em Python e Google Apps Script para otimizar
+                        processos de controle e relatórios, reduzindo tempo operacional da equipe.
+                    </p>
+                    <div class="job-tags">
+                        <span class="tag tag-sm">ITIL 4</span>
+                        <span class="tag tag-sm">COBIT 2019</span>
+                        <span class="tag tag-sm">ISO 27001</span>
+                        <span class="tag tag-sm">Python</span>
+                        <span class="tag tag-sm">Automação</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="certificacoes" class="section">
+            <h3 class="section-title"><span class="mono">03.</span> Certificações</h3>
+            <div class="certs-grid">
+                <div class="cert-card">
+                    <div class="cert-icon">🛡️</div>
+                    <div>
+                        <p class="cert-name">ISO/IEC 27001</p>
+                        <p class="cert-desc">Gestão de Segurança da Informação</p>
+                    </div>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-icon">⚙️</div>
+                    <div>
+                        <p class="cert-name">ITIL 4 Foundation</p>
+                        <p class="cert-desc">Gerenciamento de Serviços de TI</p>
+                    </div>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-icon">📋</div>
+                    <div>
+                        <p class="cert-name">COBIT 2019 Foundation</p>
+                        <p class="cert-desc">Governança Corporativa de TI</p>
+                    </div>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-icon">📊</div>
+                    <div>
+                        <p class="cert-name">Lean Six Sigma</p>
+                        <p class="cert-desc">Gestão de Processos e Qualidade</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="sobre" class="section">
+            <h3 class="section-title"><span class="mono">04.</span> Sobre mim</h3>
+            <div class="about-grid">
+                <div>
+                    <p>
+                        Sou o Raimundo, conhecido como Rai, nascido e criado no Rio de Janeiro, onde
+                        vivo com meus dois filhos. Trabalho com tecnologia há mais de 5 anos, sempre
+                        conciliando o lado técnico com o estratégico — da governança ao código.
+                    </p>
+                    <p>
+                        Fora do trabalho, sou curioso por natureza: me interesso por tatuagem, desenho
+                        artístico, música e instrumentos musicais, e adoro um trabalho manual. Acredito
+                        que essa diversidade de interesses alimenta a criatividade no dia a dia técnico.
+                    </p>
+                    <p>
+                        Atualmente estou explorando mais a fundo o ecossistema <strong>AWS</strong> —
+                        com projetos práticos envolvendo EC2, S3, Amplify e automações em Python — para
+                        aprofundar o lado de engenharia de nuvem.
+                    </p>
+                </div>
+                <div class="location-card">
+                    <div class="location-icon">📍</div>
+                    <p><strong>Rio de Janeiro, Brasil</strong></p>
+                    <p class="location-sub">Disponível para trabalho remoto</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <p>Desenvolvido por <strong>Rai Costa</strong> · Rio de Janeiro</p>
+        <p class="footer-sub">Hospedado na AWS · <a href="contato.html">Contato</a></p>
+    </footer>
+
 </body>
 </html>
