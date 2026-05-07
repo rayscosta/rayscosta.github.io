@@ -322,6 +322,90 @@ h2 {
     gap: 8px;
 }
 
+/* ===== ROLE PROGRESSION (Stone) ===== */
+.role-progression {
+    list-style: none;
+    margin: 4px 0 18px;
+    padding-left: 18px;
+    border-left: 2px solid var(--border);
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.role-progression li {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.role-progression li::before {
+    content: '';
+    position: absolute;
+    left: -24px;
+    top: 7px;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: var(--accent);
+    box-shadow: 0 0 0 3px rgba(56, 189, 248, 0.15);
+}
+
+.role-period {
+    font-family: var(--font-mono);
+    font-size: 0.74rem;
+    color: var(--text-faint);
+    letter-spacing: 0.02em;
+}
+
+.role-title {
+    font-size: 0.92rem;
+    color: var(--text);
+    font-weight: 500;
+}
+
+/* ===== LANGUAGES ===== */
+.languages-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 16px;
+}
+
+.language-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 20px 24px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    transition: border-color var(--transition), transform var(--transition);
+}
+
+.language-card:hover {
+    border-color: rgba(56, 189, 248, 0.3);
+    transform: translateY(-2px);
+}
+
+.language-flag {
+    font-size: 2rem;
+    line-height: 1;
+}
+
+.language-name {
+    font-weight: 600;
+    font-size: 0.95rem;
+    color: var(--text);
+    margin-bottom: 2px;
+}
+
+.language-level {
+    font-size: 0.78rem;
+    color: var(--text-faint);
+    font-family: var(--font-mono);
+}
+
 /* ===== CERTIFICATIONS ===== */
 .certs-grid {
     display: grid;
